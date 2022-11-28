@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { EmpviewComponent } from './empview/empview.component';
 
 const myroute:Routes=[
   {
@@ -15,6 +16,10 @@ const myroute:Routes=[
   {
     path:'',
     component:AdminLoginComponent
+  },
+  {
+    path:'view',
+    component:EmpviewComponent
   }
 ]
 
@@ -22,7 +27,8 @@ const myroute:Routes=[
   declarations: [
     AppComponent,
     EmployeeAddComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    EmpviewComponent
   ],
   imports: [
     BrowserModule,
