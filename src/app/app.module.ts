@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { EmployeeAddComponent } from './employee-add/employee-add.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { EmpviewComponent } from './empview/empview.component';
+import { EmployeeDeleteComponent } from './employee-delete/employee-delete.component';
+import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
 
 const myroute:Routes=[
   {
@@ -28,7 +30,9 @@ const myroute:Routes=[
     AppComponent,
     EmployeeAddComponent,
     AdminLoginComponent,
-    EmpviewComponent
+    EmpviewComponent,
+    EmployeeDeleteComponent,
+    EmployeeEditComponent
   ],
   imports: [
     BrowserModule,
