@@ -9,6 +9,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { EmpviewComponent } from './empview/empview.component';
 import { EmployeeDeleteComponent } from './employee-delete/employee-delete.component';
 import { EmployeeEditComponent } from './employee-edit/employee-edit.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myroute:Routes=[
   {
@@ -22,6 +23,14 @@ const myroute:Routes=[
   {
     path:'view',
     component:EmpviewComponent
+  },
+  {
+    path:'edit',
+    component:EmployeeEditComponent
+  },
+  {
+    path:'delete',
+    component:EmployeeDeleteComponent
   }
 ]
 
@@ -32,7 +41,8 @@ const myroute:Routes=[
     AdminLoginComponent,
     EmpviewComponent,
     EmployeeDeleteComponent,
-    EmployeeEditComponent
+    EmployeeEditComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
